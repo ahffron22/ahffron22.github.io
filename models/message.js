@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 
+// Get a reference to the mongoose Schema constructor
 var Schema = mongoose.Schema;
 
 var UserMessage = new Schema({

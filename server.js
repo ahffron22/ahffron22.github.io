@@ -3,12 +3,13 @@ var mongojs = require("mongojs");
 var axios = require("axios");
 var cheerio = require("cheerio");
 var mongoose = require("mongoose");
+var app = require("./public/app")
 var logger = require("morgan");
 
 var PORT = 3000;
-
+var db = require("./models/Message")
 // Require all models
-var db = require("./models/Message");
+// var db = require("./models/Message");
 
 var app = express();
 
@@ -20,9 +21,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 mongoose.connect("mongodb://localhost/userMessagesDB", { useNewUrlParser: true });
 
-var Message = require("./models/Message")
-
-app.get("/savedMessages", function (req, res) {
+app.get("/saved", function (req, res) {
     // Find all Notes
     db.Message.find({})
         .then(function (dbMessage) {
