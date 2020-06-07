@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <!-- -------Bootstrap----------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- --------------------------- -->
+    <link href="style.css" rel="stylesheet">
+    <!-- -------Fonts--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Dosis&display=swap" rel="stylesheet">
+    <!-- ------------------------- -->
+</head>
+
+<body>
+    <div id="container">
+        <div id="navContainer">
+            <header id="navBar">
+                <h1 id="navTitle">Alex Heffron: My Portfolio</h1>
+            </header>
+        </div>
+        <div id="bioContainer">
+            <div class="media">
+                <img src="./images/profile.jpg" id="profileImg" class="align-self-start mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0" id="color: #17a2b8;">About Me</h5>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="leftVerticalLine">
+            <div id="sideMenu">
+                <a href="index.html"><button id="sideMenuBttn">Bio</button></a>
+                <a href="projects.html"><button id="sideMenuBttn">Projects</button></a>
+                <a href="contact.html"><button id="sideMenuBttn">Contact Info</button></a>
+            </div>
+        </div>
+        <div id="rightVerticalLine">
+            <div id="messageBox">
+                <h2 id="messageTitle">Send a Message</h2>
+                <label for="basic-url"></label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3"></span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                        placeholder="Email">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Subject">
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
+                </div>
+                <button id="messageSubmitBttn">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="mainFooter clearFix">
+        <footer class="page-footer font-small blue">
+            <div id="mainFooterText" class="footer-copyright text-center py-3">
+                <p>© 2020 Copyright: Alex Heffron</p>
+                <p>Github Profile: <a href="https://github.com/ahffron22">ahffron22</a> </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
