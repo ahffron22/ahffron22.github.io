@@ -6,7 +6,7 @@ var mongoose = require("mongoose");
 var app = require("./public/app")
 var logger = require("morgan");
 
-var PORT = 3000;
+let PORT = process.env.PORT || 3000
 var db = require("./models/Message")
 // Require all models
 // var db = require("./models/Message");
@@ -19,7 +19,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/userMessagesDB", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/userMessagesDB";
+mongoose.connect(MONGODB_URI);
 
 app.get("/saved", function (req, res) {
     // Find all Notes
@@ -34,6 +35,6 @@ app.get("/saved", function (req, res) {
         });
 });
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log("App running on port 3000!");
 });
