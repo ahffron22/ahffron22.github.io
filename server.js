@@ -22,6 +22,10 @@ app.use(express.static("public"));
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/userMessagesDB";
 mongoose.connect(MONGODB_URI);
 
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
 app.get("/saved", function (req, res) {
     // Find all Notes
     db.Message.find({})
