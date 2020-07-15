@@ -3,7 +3,7 @@ var mongojs = require("mongojs");
 var axios = require("axios");
 var cheerio = require("cheerio");
 var mongoose = require("mongoose");
-var app = require("./public/app")
+var app = require("./app")
 var logger = require("morgan");
 
 let PORT = process.env.PORT || 3000
