@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <!-- -------Bootstrap----------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- --------------------------- -->
+    <link href="style.css" rel="stylesheet">
+    <!-- -------Fonts--------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Dosis&display=swap" rel="stylesheet">
+    <!-- ------------------------- -->
+</head>
+
+<body>
+    <div id="container">
+        <div id="navContainer">
+            <header id="navBar">
+                <h1 id="navTitle">Alex Heffron: My Projects</h1>
+            </header>
+        </div>
+        <div id="portfolioTable">
+            <h2 id="tableTitle">Entry Level Projects</h2>
+            <hr />
+            <div class="media">
+                <a href="https://imjvdn.github.io/DUproject1/"><img src="./images/trivia.jpg" class="mr-3"
+                        id="projectImg"></a>
+                <div class="media-body">
+                    <a href="https://imjvdn.github.io/DUproject1/">
+                        <h5 class="mt-0">Trivia Game</h5>
+                    </a>
+                    This is a simple trivia game that gives you thirty seconds to answer three trivia questions. It will
+                    tell you everytime you select an answer if it is correct or not.
+                </div>
+            </div>
+            <hr />
+            <div class="media">
+                <a href="https://imjvdn.github.io/DUproject1/"><img src="./images/train.jpg" class="mr-3"
+                        id="projectImg"></a>
+                <div class="media-body">
+                    <a href="https://imjvdn.github.io/DUproject1/">
+                        <h5 class="mt-0">Train Schedule</h5>
+                    </a>
+                    This app allows you to add trains to the train schedule and figures out when the next one will be
+                    arriving. It also saves all entries to Firebase and populates the table with all new entries.
+                </div>
+            </div>
+            <hr />
+            <div class="media">
+                <a href="https://ahffron22.github.io/Crystal_adding_game/">
+                    <img src="./images/math.jpg" class="mr-3" id="projectImg">
+                </a>
+                <div class="media-body">
+                    <a href="https://ahffron22.github.io/Crystal_adding_game/">
+                        <h5 class="mt-0">Crystal Adding Game</h5>
+                    </a>
+                    This app asigns a random number to each crystal each round and generates a random number that you
+                    have to try and use the crystal values to reach.
+                </div>
+            </div>
+            <h2 id="tableTitle">Intermediate Projects</h2>
+            <hr />
+            <div class="media">
+                <a href="https://imjvdn.github.io/DUproject1/"><img src="./images/movieBunker.png" class="mr-3"
+                        id="projectImg"></a>
+                <div class="media-body">
+                    <a href="https://imjvdn.github.io/DUproject1/">
+                        <h5 class="mt-0">Movie Finder</h5>
+                    </a>
+                    This app makes calls to two api databases to retrieve relevant info on any movie you search.
+                </div>
+            </div>
+            <hr />
+            <div class="media">
+                <a href="https://ahffron22.github.io/kitsune_beta/"><img src="./images/kitsune.jpg" class="mr-3"
+                        id="projectImg"></a>
+                <div class="media-body">
+                    <a href="https://ahffron22.github.io/kitsune_beta/">
+                        <h5 class="mt-0">Kitsune Restaurant</h5>
+                    </a>
+                    This is one of the first multi functional websites that I built, and was for a friend of mine
+                    who
+                    started a small catering and food delivery service. This site allows you to add and remove
+                    things
+                    from your cart, saves order progress with session storage, and allows the admin user to update
+                    the
+                    specials menu from a hidden page. The specials menu is then saved to a firebase database and
+                    populates the menu with up to date specials. It also uses the paypal api to allow users multiple
+                    ways to pay.
+                </div>
+            </div>
+        </div>
+        <div id="leftVerticalLineProjects">
+            <div id="sideMenu">
+                <a href="index.html"><button id="sideMenuBttn">Bio</button></a>
+                <a href="projects.html"><button id="sideMenuBttn">Projects</button></a>
+                <!-- <a href="contact.html"><button id="sideMenuBttn">Contact Info</button></a> -->
+            </div>
+        </div>
+        <div id="rightVerticalLineProjects">
+            <div>
+                <div id="messageBox">
+                    <h2 id="messageTitle">Contact Info:</h2>
+                    <h5 class="mt-0" id="contactInfo">Email:</h5>
+                    <p id="contactInfo">ahffron22@gmail.com</p>
+                    <hr />
+                    <h5 class="mt-0" id="contactInfo">Phone:</h5>
+                    <p id="contactInfo">720-238-1243</p>
+                    <hr />
+                    <h5 class="mt-0" id="contactInfo">Currently living in:</h5>
+                    <p id="contactInfo">Boulder, CO</p>
+                    <hr />
+                    <h5 class="mt-0" id="contactInfo">Github Profile:</h5>
+                    <p id="contactInfo">
+                        <a href="https://github.com/ahffron22">Alex Heffron</a>
+                    </p>
+                    <hr />
+                    <h5 class="mt-0" id="contactInfo">Linkedin Profile:</h5>
+                    <p id="contactInfo">
+                        <a href="https://www.linkedin.com/in/alex-heffron-61b232197/">Alex Heffron</a>
+                    </p>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainFooter clearFix">
+        <footer class="page-footer font-small blue">
+            <div id="mainFooterText" class="footer-copyright text-center py-3">
+                <p>© 2020 Copyright: Alex Heffron</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
